@@ -20,8 +20,8 @@
     <header>
         <!-- NAVBAR -->
         <div>
-            <!-- SAQUÉ bg-dark fixed-top del class name -->
-            <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+            <!-- SAQUÉ bg-dark fixed-top del class name, y cambié navbar-expand-lg por md (Código en línea 4109 a 4149 de bootsrap.css) -->
+            <nav class="navbar navbar-expand-md navbar-dark" id="mainNav">
                 <div class="container">
                     <a class="navbar-brand js-scroll-trigger" href="#page-top">Dogo</a>
 
@@ -195,14 +195,18 @@
                         <a href="#">Preguntas Frecuentes</a>
                     </li>
                     <li>
-                        <form class="search-form1">
-                            <input class="search-box" type="searchbox" placeholder="Buscar...">
-                        </form>
+                        <div class="footer-conteiner-flex">
+                            <form class="search-form1">
+                                <input class="search-box" type="searchbox" placeholder="Buscar...">
+                            </form>
+                        </div>
                     </li>
                     <li>
-                        <form class="search-form1">
-                            <button class="btn search-btn">BUSCAR</button>
-                        </form>
+                        <div class="footer-conteiner-flex">
+                            <form class="search-form1">
+                                <button class="btn search-btn">BUSCAR</button>
+                            </form>
+                        </div>
                     </li>
                     <li>
                         <div class="footer1">
