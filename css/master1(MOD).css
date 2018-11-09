@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background-color: #d3b4e6;
+    background-color: #ffaa00;
     font-family: Lato;
     margin: 0;
     padding: 0;
@@ -34,7 +34,7 @@ body {
     padding-top: 20px;
 }
 .carousel-title {
-    color: #B9FFAB;
+    color: #ffaa00;
     font-family: 'Lato', sans-serif;
     font-weight: bolder;
 }
@@ -94,7 +94,7 @@ body {
     content: "";
 }
 .carousel-indicators .active {
-    background-color: #d3b4e6;
+    background-color: #ffaa00;
 }
 
 .col-md-4, .col-12{
@@ -150,7 +150,7 @@ body {
     padding: 0px 5px 0px 5px;
 }
 .footer-nav a:hover, .footer-nav a:focus{
-    color: #B9FFAB;
+    color: #ffaa00;
     font-weight: bolder;
 }
 .footer-nav a:last-child{
@@ -167,7 +167,7 @@ body {
     padding: 0px 5px 0px 5px;
 }
 .footer-nav ul li a:hover, .footer-nav ul li a:focus{
-    color: #B9FFAB;
+    color: #ffaa00;
     font-weight: bolder;
 }
 .footer-nav1 ul li a:first-child{
@@ -196,19 +196,18 @@ i {
     text-decoration: none;
 }
 .item a img{
-    margin-top: 10px;
+    padding-top: 10px;
 }
 
 .links {
     color: #FFF;
     display: inline-block;
-    /* font-weight: bold; */
     list-style: none;
     opacity: 0.5;
     text-decoration: none;
 }
 .links:hover, strong:hover {
-    color: #d3b4e6;
+    color: #ffaa00;
     font-size: 1.1rem;
     font-weight: bolder;
     list-style: none;
@@ -216,28 +215,29 @@ i {
     text-decoration: none;
 }
 
-/* .login-box{
-    padding-top: 8px;
-    padding-left: 20px;
-} */
-
 .navbar {
     background-color: #323232;
+    box-shadow: 3px 3px 5px #fff;
 }
 
 .navbar-brand {
     color: #fff;
 }
-.navbar-brand:hover {
-    color: #d3b4e6;
+/* .navbar-brand:hover, .navbar-brand:focus {
+    color: #ffae00;
+    font-weight: bolder;
+} */
+/* línea 4331 de bootstrap */
+.navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
+    color: #ffae00;
     font-weight: bolder;
 }
 
 .nav-link {
     color: #fff;
 }
-.nav-link:hover{
-    color: #d3b4e6;
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus{
+    color: #ffaa00;
     font-weight: bolder;
 }
 
@@ -255,10 +255,14 @@ i {
 .row {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
     margin-right: -15px;
     margin-left: -15px;
+}
+.row .container-fluid{
+    display: block;
+    flex-shrink: 0;
 }
 
 .search-box{
@@ -361,6 +365,7 @@ i {
     }
 }
 
+/* Línea 4109 */
 @media (max-width: 767.98px) {
     .navbar-expand-md > .container,
     .navbar-expand-md > .container-fluid {
@@ -370,38 +375,39 @@ i {
   }
   
 @media (min-width: 768px) {
-.navbar-expand-md {
-    -ms-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
+    .navbar-expand-md {
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+    .navbar-expand-md .navbar-nav {
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    .navbar-expand-md .navbar-nav .dropdown-menu {
+        position: absolute;
+    }
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+    .navbar-expand-md > .container,
+    .navbar-expand-md > .container-fluid {
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    }
+    .navbar-expand-md .navbar-collapse {
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    }
+    .navbar-expand-md .navbar-toggler {
+        display: none;
+    }
 }
-.navbar-expand-md .navbar-nav {
-    -ms-flex-direction: row;
-    flex-direction: row;
-}
-.navbar-expand-md .navbar-nav .dropdown-menu {
-    position: absolute;
-}
-.navbar-expand-md .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-}
-.navbar-expand-md > .container,
-.navbar-expand-md > .container-fluid {
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-}
-.navbar-expand-md .navbar-collapse {
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -ms-flex-preferred-size: auto;
-    flex-basis: auto;
-}
-.navbar-expand-md .navbar-toggler {
-    display: none;
-}
-}
+/* hasta 4149 del css de Bootstrap */
 
 @media (max-width: 559.98px) {
     

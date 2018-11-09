@@ -24,51 +24,50 @@
             <nav class="navbar navbar-expand-md navbar-dark" id="mainNav">
                 <div class="container">
                     <a class="navbar-brand js-scroll-trigger" href="#page-top">Dogo</a>
-
-                <div class="conteiner-flex1">
-                    <div class="redes-top">
-                        <div class="social-icon">
-                            <a href="#">
-                                <img src="img/social-fb.svg" alt="Facebook">
-                            </a>
-                        </div>
-                        <div class="social-icon">
-                            <a href="#">
-                                <img src="img/social-ig.svg" alt="Instagram">
-                            </a>
-                        </div>
-                        <div class="social-icon">
-                            <a href="#">
-                                <img src="img/social-email.svg" alt="Email">
-                            </a>
+                    <div class="conteiner-flex1">
+                        <div class="redes-top">
+                            <div class="social-icon">
+                                <a href="#">
+                                    <img src="img/social-fb.svg" alt="Facebook">
+                                </a>
+                            </div>
+                            <div class="social-icon">
+                                <a href="#">
+                                    <img src="img/social-ig.svg" alt="Instagram">
+                                </a>
+                            </div>
+                            <div class="social-icon">
+                                <a href="#">
+                                    <img src="img/social-email.svg" alt="Email">
+                                </a>
+                            </div>
                         </div>
                     </div>
+                
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#"><strong>Login</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#"><strong>Registro</strong></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#"><strong>Login</strong></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#"><strong>Registro</strong></a>
-                        </li>
-                    </ul>
-                </div>
-                
             </nav>
         </div>
     </header>
@@ -118,105 +117,109 @@
     </section>
 
     <!-- MAIN -->
-    <section>
-        <div class="conteiner-flex">
-            <div class="row conteiner-fluid">
-                <article class="col-md-4 col-12">
-                    <div class="caption">
-                        <div class="item">
-                            <a href="#">
-                                <h3>TEXTO 1</h3>
-                                <small>Descripción</small>
-                                <img src="img/almohadon_dogo.jpg" alt="Cama para perro">
-                            </a>
+    <main>
+        <section>
+            <div class="conteiner-flex">
+                <div class="row conteiner-fluid">
+                    <article class="col-md-4 col-12">
+                        <div class="caption">
+                            <div class="item">
+                                <a href="#">
+                                    <h3>TEXTO 1</h3>
+                                    <small>Descripción</small>
+                                    <img src="img/almohadon_dogo.jpg" alt="Cama para perro">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                </article>
-                <article class="col-md-4 col-12">
-                    <div class="caption">
-                        <div class="item">
-                            <a href="#">
-                                <h3>TEXTO 2</h3>
-                                <small>Descripción</small>
-                                <img src="img/almohadon_dogo.jpg" alt="Cama para perro">
-                            </a>
+                    </article>
+                    <article class="col-md-4 col-12">
+                        <div class="caption">
+                            <div class="item">
+                                <a href="#">
+                                    <h3>TEXTO 2</h3>
+                                    <small>Descripción</small>
+                                    <img src="img/almohadon_dogo.jpg" alt="Cama para perro">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                </article>
-                <article class="col-md-4 col-12">
-                    <div class="caption">
-                        <div class="item">
-                            <a href="#">
-                                <h3>TEXTO 3</h3>
-                                <small>Descripción</small>
-                                <img src="img/almohadon_dogo.jpg" alt="Cama para perro">
-                            </a>
+                    </article>
+                    <article class="col-md-4 col-12">
+                        <div class="caption">
+                            <div class="item">
+                                <a href="#">
+                                    <h3>TEXTO 3</h3>
+                                    <small>Descripción</small>
+                                    <img src="img/almohadon_dogo.jpg" alt="Cama para perro">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                </article>
+                    </article>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- FOOTER -->
-    <section>
-        <div class="conteiner-flex1">
-            <div class="footer">
-                <nav class="footer-nav">
-                    <a href="#">Inicio</a>
-                    <a href="#">Productos</a>
-                    <a href="#">Servicios</a>
-                    <a href="#">Contacto</a>
-                    <a href="#">Preguntas Frecuentes</a>
+    <footer>
+        <section>
+            <div class="conteiner-flex1">
+                <div class="footer">
+                    <nav class="footer-nav">
+                        <a href="#">Inicio</a>
+                        <a href="#">Productos</a>
+                        <a href="#">Servicios</a>
+                        <a href="#">Contacto</a>
+                        <a href="#">Preguntas Frecuentes</a>
+                    </nav>
+                </div>
+                <form class="search-form">
+                    <input class="search-box" type="searchbox" placeholder="Buscar...">
+                    <button class="btn search-btn">BUSCAR</button>
+                </form>
+                <div class="footer">
+                    <i>2018 Todos los Derechos reservados.</i>
+                </div>
+                <nav class="footer-nav1">
+                    <ul>
+                        <li>
+                            <a href="#">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#">Productos</a>
+                        </li>
+                        <li>
+                            <a href="#">Servicios</a>
+                        </li>
+                        <li>
+                            <a href="#">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="#">Preguntas Frecuentes</a>
+                        </li>
+                        <li>
+                            <div class="footer-conteiner-flex">
+                                <form class="search-form1">
+                                    <input class="search-box" type="searchbox" placeholder="Buscar...">
+                                </form>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="footer-conteiner-flex">
+                                <form class="search-form1">
+                                    <button class="btn search-btn">BUSCAR</button>
+                                </form>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="footer1">
+                                <i>2018 Todos los Derechos reservados.</i>
+                            </div>
+                        </li>
+                    </ul>
                 </nav>
             </div>
-            <form class="search-form">
-                <input class="search-box" type="searchbox" placeholder="Buscar...">
-                <button class="btn search-btn">BUSCAR</button>
-            </form>
-            <div class="footer">
-                <i>2018 Todos los Derechos reservados.</i>
-            </div>
-            <nav class="footer-nav1">
-                <ul>
-                    <li>
-                        <a href="#">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="#">Productos</a>
-                    </li>
-                    <li>
-                        <a href="#">Servicios</a>
-                    </li>
-                    <li>
-                        <a href="#">Contacto</a>
-                    </li>
-                    <li>
-                        <a href="#">Preguntas Frecuentes</a>
-                    </li>
-                    <li>
-                        <div class="footer-conteiner-flex">
-                            <form class="search-form1">
-                                <input class="search-box" type="searchbox" placeholder="Buscar...">
-                            </form>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="footer-conteiner-flex">
-                            <form class="search-form1">
-                                <button class="btn search-btn">BUSCAR</button>
-                            </form>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="footer1">
-                            <i>2018 Todos los Derechos reservados.</i>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </section>
+        </section>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
