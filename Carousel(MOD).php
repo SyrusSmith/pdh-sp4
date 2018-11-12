@@ -118,6 +118,7 @@
 
     <!-- MAIN -->
     <main>
+        <!-- CATEGORÍAS -->
         <section>
             <div class="conteiner-flex">
                 <div class="row conteiner-fluid">
@@ -155,6 +156,197 @@
                         </div>
                     </article>
                 </div>
+            </div>
+        </section>
+
+        <!-- FORM REGISTRO -->
+        <section>
+            <div class="conteiner-flex">
+                <form class="form form-horizontal" action="" method="POST" enctype="multipart/form-data">
+                    <div class="reg-form">
+                        <fieldset>
+                            <h2> Creá tu cuenta con nosotros</h2>
+                            <br>
+                            <br>
+                            <div class="form-group">
+                                <div class="col-md-auto">
+                                    <h4>
+                                        <label class="control-label">Datos Personales</label>
+                                        <small>* (campos obligatorios)</small>
+                                    </h4>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label class="control-label col-md-2" for="nombre">Nombre:</label>
+                                <div class="col-md-10">
+                                    <input class="form-control" type="text" name="nombre" value="" placeholder=" Nombre *">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-2" for="apellido">Apellido:</label>
+                                <div class="col-md-10">
+                                    <input class="form-control" type="text" name="apellido" value="" placeholder=" Apellido *">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-2" for="email">e-Mail:</label>
+                                <div class="col-md-10">
+                                    <input class="form-control" type="email" name="email" value="" placeholder=" Corre Electrónico *">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-2" for="password">Password:</label>
+                                <div class="col-md-10">
+                                    <input class="form-control" type="password" name="password" placeholder=" Elegí tu contraseña *">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-2" for="cpassword">Confirmá tu password:</label>
+                                <div class="col-md-10">
+                                    <input class="form-control" type="password" name="cpassword" placeholder=" Confirmá tu contraseña *">
+                                </div>
+                                <?php if(isset($errores['password'])) :?>
+                                <div class="alert"><p><strong><?= $errores['password'] ?></strong></p></div>
+                                <?php endif; ?>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-2" for="dni">DNI:</label>
+                                <div class="col-md-10">
+                                    <input class="form-control" type="text" name="dni" value="" placeholder=" DNI">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-2" for="direccion">Dirección:</label>
+                                <div class="col-md-10">
+                                    <input class="form-control" type="text" name="direccion" value="" placeholder=" Dirección">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-2" for="departamento">Departamento</label>
+                                <div class="col-md-10">
+                                    <input class="form-control" type="text" name="departamento" value="" placeholder=" Piso/Departamento">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-2" for="telefono">Teléfono</label>
+                                <div class="col-md-10">
+                                    <input class="form-control" type="text" name="telefono" value="" placeholder=" Teléfono">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-2" for="localidad">Localidad</label>
+                                <div class="col-md-10">
+                                    <input class="form-control" type="text" name="localidad" value="" placeholder=" Localidad">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-2" for="provincia">Provincia</label>
+                                <div class="col-md-10">
+                                    <input class="form-control" type="text" name="provincia" value="" placeholder=" Provincia">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-2" for="codiga-postal">Código Postal</label>
+                                <div class="col-md-10">
+                                    <input class="form-control" type="text" name="codigo-postal" value="" placeholder=" Código Postal">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-2" for="fecha-de-nacimiento">Fecha de Nacimiento</label>
+                                <div class="col-md-10">
+                                    <input class="form-control" type="text" name="fecha-de-nacimiento" value="" placeholder=" Fecha de Nacimiento">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="control-label col-md-2" for="genero" name="genero">Género:</label>
+                                <div class="col-md-2">
+                                    <input  type="radio" name="genero" value="f">
+                                    <label class="control-label col-md-2" for="genero" name="femenino">Femenino</label>
+                                </div>
+                                <div class="col-md-2">
+                                    <input type="radio" name="genero" value="m">
+                                    <label class="control-label col-md-2" for="genero" name="masculino">Masculino</label>
+                                </div>
+                                <div class="col-md-2">
+                                    <input type="radio" name="genero" value="o">
+                                    <label class="control-label col-md-2" for="genero" name="otro">Otro</label>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <h4>
+                                    <label class="control-label" for="avatar">Foto de Perfil</label>
+                                </h4>
+                                <div class="col-md-10">
+                                    <input type="file" name="avatar">
+                                    <?php if(isset($errores['avatar'])) :?>
+                                    <div class="alert"><p><strong><?= $errores['avatar'] ?></strong></p></div>
+                                    <?php endif; ?>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <div class="col-md-auto">
+                                    <h4>
+                                        <label class="" for="animals">¿Qué animales te gustan?</label>
+                                    </h4>
+                                </div>
+                                <br>
+                                <div class="col-md-8">
+                                    <input type="checkbox" name="gatos">
+                                    <label for="animals" name="gatos">Gatos</label>
+
+                                    <input type="checkbox" name="perros">
+                                    <label for="animals" name="perros">Perros</label>
+
+                                    <input type="checkbox" name="aves">
+                                    <label for="animals" name="aves">Aves</label>
+
+                                    <input type="checkbox" name="reptiles">
+                                    <label for="animals" name="reptiles">Reptiles</label>
+
+                                    <input type="checkbox" name="peces">
+                                    <label for="animals" name="peces">Peces</label>
+                                </div>
+                            </div>
+                            <br>
+                            <div >
+                                <hr>
+                                <br>
+                                <div class="conteiner-flex">
+                                    <div class="form-group">
+                                        <div class="col-md-auto">
+                                            <label class="control-label" for="newsletter">Quiero suscribirme al newsletter semanal</label>
+                                        </div>
+                                        <div class="col-md-auto">
+                                            <input type="checkbox" name="newsletter">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="conteiner-flex">
+                                    <div class="form-group">
+                                        <div class="col-md-auto">
+                                            <label class="control-label" for="confirm">* Acepto Términos y Condiciones</label>
+                                        </div>
+                                        <div class="col-md-auto">
+                                            <input type="checkbox" name="confirm">
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <br>
+                                <div class="conteiner-flex col-md-12">
+                                <button class="btn form-btn" type="submit">ENVIAR</button>
+                                
+                                <button class="btn form-btn" type="reset">BORRAR</button>
+                                </div>
+                            </div>       
+                        </fieldset>
+                    </div> 
+                </form>
             </div>
         </section>
     </main>

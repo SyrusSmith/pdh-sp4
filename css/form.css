@@ -47,33 +47,30 @@ body {
     opacity: 0.8; 
 }
 
-/*.main-nav a:hover {
-    background-color: rgb(98, 0, 190); /*Cambié el color, me parece que quedan mejor éstos y saqué la opacidad, porque en el menú querés que las opciones sean bien legibles y de fácil acceso, no al revés*/
+.user {
+    display: flex;
+    width: 18%;
+    justify-content: space-around;
+    
+}
 
-    .user {
-        display: flex;
-        width: 18%;
-        justify-content: space-around;
-      
-    }
-    
-    .user a{
-        text-align: center;
-        width: 40%;
-        padding: 15px 0px 15px 0px;
-        text-decoration: none;
-        border-radius: 10%;
-        color: white;
-        background-color: rgb(98, 0, 190); 
-        opacity: 0.8; 
-    }
-    
+.user a{
+    text-align: center;
+    width: 40%;
+    padding: 15px 0px 15px 0px;
+    text-decoration: none;
+    border-radius: 10%;
+    color: white;
+    background-color: rgb(98, 0, 190); 
+    opacity: 0.8; 
+}
 
-    .main-nav a:hover {
-        background-color: rgb(98, 0, 190);
-        opacity: 1;
-    
-    }
+
+.main-nav a:hover {
+    background-color: rgb(98, 0, 190);
+    opacity: 1;
+
+}
 
 .banner{
     margin: 10px 0px 10px 0px;
@@ -210,8 +207,6 @@ i {
         font-size: 1em;
     }
 
-   
-
     .doggo{
         max-width: 40%;
     }
@@ -232,6 +227,7 @@ i {
         width: 100%;
         justify-content: space-around;
     }
+}
 
 @media (max-width: 575.98px) {
     

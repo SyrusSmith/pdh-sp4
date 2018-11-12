@@ -14,6 +14,19 @@ body {
     padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h4 small{
+    font-size: 60%;
+}
+
+label{
+    margin-bottom: 0;
+}
+
 .caption{
     border-radius: 5px;
     color: #FFF;
@@ -105,6 +118,15 @@ body {
     padding: 15px;
 }
 
+.col-md-10{
+    padding: auto;
+    margin: auto;
+}
+
+.col-md-auto{
+    display: flex;
+}
+
 .conteiner-flex {
     align-items: center;
     border-radius: 15px;
@@ -130,6 +152,7 @@ body {
     margin-left: auto;
 }
 
+/* Footer */
 .footer {
     display: flex;
     /* justify-content: center; */
@@ -293,9 +316,10 @@ i {
     background-color: #B9FFAB;
     color: #323232;
     height: 2rem;
+    line-height: 1rem;
     text-align: center;
 }
-.search-btn:hover{
+.search-btn:hover, .search-btn:focus{
     background-color: #505050;
     color: #B9FFAB;
 }
@@ -324,6 +348,105 @@ i {
     width: 2.2rem;
 }
 
+/* CLASSES FORM REGISTRO*/
+.alert {
+    background-color: rgba(150, 0, 0, 0.5);
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.error-carga {
+    margin-top: 200px;
+    margin-left: 640px;
+}
+
+.form {
+    background-color: rgba(200, 200, 200, 0.5);
+    border-radius: 5px;
+    display: flex;
+    padding: 10px 20px 10px 20px;
+    max-width: 70.313rem;
+    width: 100%;
+}
+
+/* LÍNEA 1811 DEL CSS DE BOOTSTRAP */
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+/* LÍNEA 1837 DEL CSS DE BOOTSTRAP */
+small{
+    padding-bottom: 10px;
+}
+
+.control-label{
+    text-align: right;
+}
+
+.form-btn{
+    background-color: #323232;
+    color: #ffaa00;
+    height: 2rem;
+    line-height: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    width: 25%;
+}
+.form-btn:hover, .form-btn:focus{
+    background-color: #505050;
+    color: #B9FFAB;
+    box-shadow: 0 0 0 0.2rem rgba(255, 170, 0, 1);
+}
+
+.form-control:focus {
+    color: #ffaa00;
+    background-color: #fff;
+    border-color: #ffb520;
+    outline: 0;
+    /* box-shadow: 0 0 0 0.2rem rgba(255, 170, 0, 1); */
+}
+
+.form-group{
+    align-content: center;
+    display: flex;
+}
+/* .form-group:focus, .form-group:hover{
+    background-color: rgba(50, 50, 50, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 0 0 0.2rem rgba(255, 170, 0, 1);
+    height: 3rem;
+    line-height: 3rem;
+    margin-top: 0.5rem;
+} */
+
+.reg-form {
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    margin-top: 20px; 
+    padding: 30px;
+    width: 100%;
+}
+.reg-form:hover, .reg-form:focus{
+    background-color:  rgba(200, 200, 200, 0.25);
+    box-shadow: 0 0 0 0.3rem rgba(255, 255, 255, 0.25);
+}
+
+
+/* MEDIA QUERIES */
 @media (max-width: 909.98px){
 
     .footer-nav{

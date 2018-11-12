@@ -20,10 +20,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
-
-
 }
 
 .error-carga {
@@ -323,7 +319,6 @@ main {
     padding: 30px;
     align-content: center;
     position: relative;
-    
 }
 
 .form-input {
