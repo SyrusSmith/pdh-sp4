@@ -210,55 +210,55 @@
                                 <div class="alert"><p><strong><?= $errores['password'] ?></strong></p></div>
                                 <?php endif; ?>
                             </div>
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <label class="control-label col-md-2" for="dni">DNI:</label>
                                 <div class="col-md-10">
                                     <input class="form-control" type="text" name="dni" value="" placeholder=" DNI">
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="form-group">
                                 <label class="control-label col-md-2" for="direccion">Dirección:</label>
                                 <div class="col-md-10">
                                     <input class="form-control" type="text" name="direccion" value="" placeholder=" Dirección">
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <label class="control-label col-md-2" for="departamento">Departamento</label>
                                 <div class="col-md-10">
                                     <input class="form-control" type="text" name="departamento" value="" placeholder=" Piso/Departamento">
                                 </div>
-                            </div>
-                            <div class="form-group">
+                            </div> -->
+                            <!-- <div class="form-group">
                                 <label class="control-label col-md-2" for="telefono">Teléfono</label>
                                 <div class="col-md-10">
                                     <input class="form-control" type="text" name="telefono" value="" placeholder=" Teléfono">
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="form-group">
-                                <label class="control-label col-md-2" for="localidad">Localidad</label>
+                                <label class="control-label col-md-2" for="localidad">Localidad y Provincia</label>
                                 <div class="col-md-10">
                                     <input class="form-control" type="text" name="localidad" value="" placeholder=" Localidad">
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <label class="control-label col-md-2" for="provincia">Provincia</label>
                                 <div class="col-md-10">
                                     <input class="form-control" type="text" name="provincia" value="" placeholder=" Provincia">
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="form-group">
                                 <label class="control-label col-md-2" for="codiga-postal">Código Postal</label>
                                 <div class="col-md-10">
                                     <input class="form-control" type="text" name="codigo-postal" value="" placeholder=" Código Postal">
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <label class="control-label col-md-2" for="fecha-de-nacimiento">Fecha de Nacimiento</label>
                                 <div class="col-md-10">
                                     <input class="form-control" type="text" name="fecha-de-nacimiento" value="" placeholder=" Fecha de Nacimiento">
                                 </div>
-                            </div>
-                            
+                            </div> -->
+                            <br>
                             <div class="form-group">
                                 <label class="control-label col-md-2" for="genero" name="genero">Género:</label>
                                 <div class="col-md-2">
@@ -284,31 +284,6 @@
                                     <?php if(isset($errores['avatar'])) :?>
                                     <div class="alert"><p><strong><?= $errores['avatar'] ?></strong></p></div>
                                     <?php endif; ?>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="form-group">
-                                <div class="col-md-auto">
-                                    <h4>
-                                        <label class="" for="animals">¿Qué animales te gustan?</label>
-                                    </h4>
-                                </div>
-                                <br>
-                                <div class="col-md-8">
-                                    <input type="checkbox" name="gatos">
-                                    <label for="animals" name="gatos">Gatos</label>
-
-                                    <input type="checkbox" name="perros">
-                                    <label for="animals" name="perros">Perros</label>
-
-                                    <input type="checkbox" name="aves">
-                                    <label for="animals" name="aves">Aves</label>
-
-                                    <input type="checkbox" name="reptiles">
-                                    <label for="animals" name="reptiles">Reptiles</label>
-
-                                    <input type="checkbox" name="peces">
-                                    <label for="animals" name="peces">Peces</label>
                                 </div>
                             </div>
                             <br>
