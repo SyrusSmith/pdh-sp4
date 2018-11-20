@@ -110,6 +110,8 @@
     </div>
     
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootsrap.js"></script>
+    <script src="js/bootsrap.bundle.js"></script>
     <script src="js/product.js"></script>
 </body>
 </html>

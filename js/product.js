@@ -1,7 +1,8 @@
-window.onload = function(){
+$(document).ready(function()
+{
+	"use strict";
 
-
-    	/* 4. Init Image */
+	/* Init Image */
 
 	function initImage()
 	{
@@ -51,4 +52,4 @@ window.onload = function(){
 			});
 		}
 	}
-}
+});

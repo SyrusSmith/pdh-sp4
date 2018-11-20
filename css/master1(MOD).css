@@ -445,8 +445,7 @@ small{
     box-shadow: 0 0 0 0.3rem rgba(255, 255, 255, 0.25);
 }
 
-/* PRODUCT */
-
+/* PRODUCT CLASSES */
 .product
 {
 	padding-top: 94px;
@@ -468,7 +467,7 @@ small{
 {
 	display: inline-block;
 	position: relative;
-	font-family: 'Lucida', serif;
+	font-family: 'Lato', serif;
 	font-size: 16px;
 	color: #232323;
 }
@@ -485,7 +484,7 @@ small{
 }
 .current_page ul li a
 {
-	font-family: 'Lucida', serif;
+	font-family: 'Lato', serif;
 	font-size: 16px;
 	color: #232323;
 	-webkit-transition: all 200ms ease;
