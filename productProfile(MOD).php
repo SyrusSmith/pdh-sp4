@@ -32,19 +32,19 @@
 			<div class="row product_row">
 
 				<!-- Product Image -->
-				<div class="col-lg-7">
+				<div class="col-lg-6">
 					<div class="product_image">
 						<div class="product_image_large"><img src="img/product_image_1.jpg" alt=""></div>
-						<div class="product_image_thumbnails d-flex flex-row align-items-start justify-content-start">
+						<!-- <div class="product_image_thumbnails d-flex flex-row align-items-start justify-content-start">
 							<div class="product_image_thumbnail" style="background-image:url(img/product_image_1.jpg)" data-image="img/product_image_1.jpg"></div>
 							<div class="product_image_thumbnail" style="background-image:url(img/product_image_2.jpg)" data-image="img/product_image_2.jpg"></div>
 							<div class="product_image_thumbnail" style="background-image:url(img/product_image_4.jpg)" data-image="img/product_image_4.jpg"></div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 
 				<!-- Product Content -->
-				<div class="col-lg-5">
+				<div class="col-lg-6">
 					<div class="product_content">
 						<div class="product_name">2 Piece Swimsuit</div>
 						<div class="product_price">$35.00</div>
@@ -67,7 +67,7 @@
 						<div class="product_quantity_container">
 							<span>Quantity</span>
 							<div class="product_quantity clearfix">
-								<input id="quantity_input" type="text" pattern="[0-9]*" value="1">
+								<input id="quantity_input" type="number" value="1">
 								<!-- <div class="quantity_buttons">
 									<div id="quantity_inc_button" class="quantity_inc quantity_control"><i class="fa fa-caret-up" aria-hidden="true"></i></div>
 									<div id="quantity_dec_button" class="quantity_dec quantity_control"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
