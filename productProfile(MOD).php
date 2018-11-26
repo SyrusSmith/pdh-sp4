@@ -48,13 +48,6 @@
 					<div class="product_content">
 						<div class="product_name">2 Piece Swimsuit</div>
 						<div class="product_price">$35.00</div>
-						<!-- <div class="rating rating_4" data-rating="4">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-						</div> -->
 						<!-- In Stock -->
 						<div class="in_stock_container">
 							<div class="in_stock in_stock_true"></div>
