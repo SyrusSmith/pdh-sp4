@@ -82,7 +82,7 @@
     <div class="container">
         <div class="product">
             <aside>
-                <div class="sidenav col-4">
+                <div class="sidenav">
                     <div class="logocorpoFooter">
                         <a href="/">
                             <!-- <img src="{{ asset('img/imagen_corporate/logospring.png') }}"> -->
@@ -94,117 +94,69 @@
                     <a href="/productos/categoria/6">CUIDADOS</a>
                     <a href="/productos/categoria/3">JUGUETES</a>
                     <a href="/productos/categoria/2">DECO-PET</a>
-                    <a href="/productos/categoria/4">TECH</a>
-                    {{-- <div class="logocorpoFooter">
-                        <!-- <a href="/"><img src="{{ asset('img/imagen_corporate/logospring.png') }}"></a> -->
-                        </div>
-                    --}}    
+                    <a href="/productos/categoria/4">TECH</a>   
                 </div>
             </aside>
 
             <main>
-                <div class="product-list col-8">
+                <div class="product-list">
                         <!-- @foreach($products as $product) -->
                         <div class="center">
                             <div class="card-product">
-                                <img class="card-img-product" src="/storage/{{ $product->photopath }}" alt="Card image cap">
-                                    <div class="card-body-product">
-                                        <h5 class="card-title-product">{{ $product->prod_name }}</h5>
-                                        <p class="card-price-product">${{ $product->price }}</p>
-                                        <form class="card-form-product" action="/productos/{{ $product->id }}/agregar" method="post">
-                                            @csrf
-                                            <input type="hidden" name="product_id" value="{{ $product->id }}">
-                                            <label for="stock" class="prod-ammount-label">Cantidad</label><input class="prod-ammount" type="number" value="1" name="stock">
-                                            <button type="submit" class="btn btn-outline-secondary">Agregar al carrito</button>
-                                        </form> 
-                                        <a href="/productos/{{ $product->id }}" class="btn btn-dark">Ver Más >></a>
-                                    </div>
+                                <!-- <img class="card-img-product" src="/storage/{{ $product->photopath }}" alt=""> -->
+                                <img class="card-img-product" src="img/categorias/alimen.png" alt="">
+                                <div class="card-body-product">
+                                    <h5 class="card-title-product">ASD<!--{{ $product->prod_name }}--></h5>
+                                    <p class="card-price-product">Sarasa <!-- ${{ $product->price }}--></p>
+                                    <form class="card-form-product" action="/productos/{{ $product->id }}/agregar" method="post">
+                                        @csrf
+                                        <input type="hidden" name="product_id" value="{{ $product->id }}">
+                                        <label for="stock" class="prod-ammount-label">Cantidad</label><input class="prod-ammount" type="number" value="1" name="stock">
+                                        <button type="submit" class="btn btn-outline-secondary">Agregar al carrito</button>
+                                    </form> 
+                                    <a href="/productos/{{ $product->id }}" class="btn btn-dark">Ver Más >></a>
+                                </div>
                             </div>
                         </div>
                         <!-- @endforeach -->
+                        
                         <div class="center">
                             <div class="card-product">
-                                <img class="card-img-product" src="/storage/{{ $product->photopath }}" alt="Card image cap">
-                                    <div class="card-body-product">
-                                        <h5 class="card-title-product">{{ $product->prod_name }}</h5>
-                                        <p class="card-price-product">${{ $product->price }}</p>
-                                        <form class="card-form-product" action="/productos/{{ $product->id }}/agregar" method="post">
-                                            @csrf
-                                            <input type="hidden" name="product_id" value="{{ $product->id }}">
-                                            <label for="stock" class="prod-ammount-label">Cantidad</label><input class="prod-ammount" type="number" value="1" name="stock">
-                                            <button type="submit" class="btn btn-outline-secondary">Agregar al carrito</button>
-                                        </form> 
-                                        <a href="/productos/{{ $product->id }}" class="btn btn-dark">Ver Más >></a>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="center">
-                            <div class="card-product">
-                                <img class="card-img-product" src="/storage/{{ $product->photopath }}" alt="Card image cap">
-                                    <div class="card-body-product">
-                                        <h5 class="card-title-product">{{ $product->prod_name }}</h5>
-                                        <p class="card-price-product">${{ $product->price }}</p>
-                                        <form class="card-form-product" action="/productos/{{ $product->id }}/agregar" method="post">
-                                            @csrf
-                                            <input type="hidden" name="product_id" value="{{ $product->id }}">
-                                            <label for="stock" class="prod-ammount-label">Cantidad</label><input class="prod-ammount" type="number" value="1" name="stock">
-                                            <button type="submit" class="btn btn-outline-secondary">Agregar al carrito</button>
-                                        </form> 
-                                        <a href="/productos/{{ $product->id }}" class="btn btn-dark">Ver Más >></a>
-                                    </div>
+                                <!-- <img class="card-img-product" src="/storage/{{ $product->photopath }}" alt=""> -->
+                                <img class="card-img-product" src="img/categorias/alimen.png" alt="">
+                                <div class="card-body-product">
+                                    <h5 class="card-title-product">ASD<!--{{ $product->prod_name }}--></h5>
+                                    <p class="card-price-product">Sarasa <!-- ${{ $product->price }}--></p>
+                                    <form class="card-form-product" action="/productos/{{ $product->id }}/agregar" method="post">
+                                        @csrf
+                                        <input type="hidden" name="product_id" value="{{ $product->id }}">
+                                        <label for="stock" class="prod-ammount-label">Cantidad</label><input class="prod-ammount" type="number" value="1" name="stock">
+                                        <button type="submit" class="btn btn-outline-secondary">Agregar al carrito</button>
+                                    </form> 
+                                    <a href="/productos/{{ $product->id }}" class="btn btn-dark">Ver Más >></a>
+                                </div>
                             </div>
                         </div>
 
                         <div class="center">
                             <div class="card-product">
-                                <img class="card-img-product" src="/storage/{{ $product->photopath }}" alt="Card image cap">
-                                    <div class="card-body-product">
-                                        <h5 class="card-title-product">{{ $product->prod_name }}</h5>
-                                        <p class="card-price-product">${{ $product->price }}</p>
-                                        <form class="card-form-product" action="/productos/{{ $product->id }}/agregar" method="post">
-                                            @csrf
-                                            <input type="hidden" name="product_id" value="{{ $product->id }}">
-                                            <label for="stock" class="prod-ammount-label">Cantidad</label><input class="prod-ammount" type="number" value="1" name="stock">
-                                            <button type="submit" class="btn btn-outline-secondary">Agregar al carrito</button>
-                                        </form> 
-                                        <a href="/productos/{{ $product->id }}" class="btn btn-dark">Ver Más >></a>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="center">
-                            <div class="card-product">
-                                <img class="card-img-product" src="/storage/{{ $product->photopath }}" alt="Card image cap">
-                                    <div class="card-body-product">
-                                        <h5 class="card-title-product">{{ $product->prod_name }}</h5>
-                                        <p class="card-price-product">${{ $product->price }}</p>
-                                        <form class="card-form-product" action="/productos/{{ $product->id }}/agregar" method="post">
-                                            @csrf
-                                            <input type="hidden" name="product_id" value="{{ $product->id }}">
-                                            <label for="stock" class="prod-ammount-label">Cantidad</label><input class="prod-ammount" type="number" value="1" name="stock">
-                                            <button type="submit" class="btn btn-outline-secondary">Agregar al carrito</button>
-                                        </form> 
-                                        <a href="/productos/{{ $product->id }}" class="btn btn-dark">Ver Más >></a>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="center">
-                            <div class="card-product">
-                                <img class="card-img-product" src="/storage/{{ $product->photopath }}" alt="Card image cap">
-                                    <div class="card-body-product">
-                                        <h5 class="card-title-product">{{ $product->prod_name }}</h5>
-                                        <p class="card-price-product">${{ $product->price }}</p>
-                                        <form class="card-form-product" action="/productos/{{ $product->id }}/agregar" method="post">
-                                            @csrf
-                                            <input type="hidden" name="product_id" value="{{ $product->id }}">
-                                            <label for="stock" class="prod-ammount-label">Cantidad</label><input class="prod-ammount" type="number" value="1" name="stock">
-                                            <button type="submit" class="btn btn-outline-secondary">Agregar al carrito</button>
-                                        </form> 
-                                        <a href="/productos/{{ $product->id }}" class="btn btn-dark">Ver Más >></a>
-                                    </div>
+                                <!-- <img class="card-img-product" src="/storage/{{ $product->photopath }}" alt=""> -->
+                                <img class="card-img-product" src="img/categorias/alimen.png" alt="">
+                                <div class="card-body-product">
+                                    <h5 class="card-title-product">ASD<!--{{ $product->prod_name }}--></h5>
+                                    <p class="card-price-product">Sarasa <!-- ${{ $product->price }}--></p>
+                                    <form class="card-form-product" action="/productos/{{ $product->id }}/agregar" method="post">
+                                        @csrf
+                                        <input type="hidden" name="product_id" value="{{ $product->id }}">
+                                        <label for="stock" class="prod-ammount-label">Cantidad</label><input class="prod-ammount" type="number" value="1" name="stock">
+                                        <button type="submit" class="btn btn-outline-secondary">Agregar al carrito</button>
+                                    </form> 
+                                    <a href="/productos/{{ $product->id }}" class="btn btn-dark">Ver Más >></a>
+                                </div>
                             </div>
                         </div>
                         
-                        @foreach($products as $product)
+                        <!-- @foreach($products as $product) -->
                         <li>
                             <a href="/productos/{{ $product->id }}">{{ $product->prod_name }}</a>
                         <form action="/productos/{{ $product->id }}/agregar" method="post">
@@ -214,9 +166,9 @@
                                 <input type="submit" name="submit" value="Agregar al Carrito">
                             </form>      
                         </li>
-                        @endforeach
+                        <!-- @endforeach -->
                     </ul>
-                    <!-- <a href="#">Agregar Nuevo Genero</a>--> --}}
+                    <!-- <a href="#">Agregar Nuevo Genero</a> --}} -->
                 </div>
             </main>
         </div>

@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: 0 auto;
 }
 
 html {
@@ -539,7 +540,7 @@ small{
 .carousel {
     display: flex;
     padding-bottom: 10px;
-    padding-top: 80px;
+    padding-top: 60px;
 }
 
 /*titulos carrousel-----------------------*/
@@ -753,12 +754,12 @@ small{
     font-family: 'Lato', sans-serif;
     height: 511px;
     left: 100px;
-    margin-bottom: 100px;
-    margin-top: 50px;
+    margin-bottom: 12.500em;
+    margin-top: 1.125em;
     padding: 8px 0px 8px 0px;
     position: fixed;
-    width: 200px;
-    z-index: -1;
+    width: 12.500em;
+    z-index: 1;
 }
 .sidenav a {
     padding: 6px 8px 6px 30px;
@@ -766,7 +767,7 @@ small{
     font-size: 1.1em;
     color: #fff;
     opacity: 0.8;
-    display: block;
+    display: inline-block;
 }
 .sidenav a:first-child{
     padding: 16px 8px 32px 8px;
@@ -782,20 +783,20 @@ small{
 }
 
 /* PRODUCT LIST */
+/* MODIFICADO DESDE ACÁ */
 .product-list {
     width: 100%;
-    position: relative;
-    margin-top: 50px;
-    padding: 0px 10px;
+    margin-left: 0;
+    margin-top: 1.125em;
+    padding: 0px 10px 0px 300px;
     justify-content: start;
     display: grid;
     grid-column-gap:1rem;
     grid-row-gap: 1rem;
-    grid-template-columns: repeat(3,400px);
+    grid-template-columns: repeat(3,250px);
 }
 
 .card-product {
-    position: relative;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -807,17 +808,18 @@ small{
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
-    height: 511px;
+    height: 31.938em;
+    padding-bottom: 40px;
 }
 
 .card-body-product {
     text-align: center;
     padding-top: 10px;
-    height:170px;
+    height:10.625em;
     
 }
 .card-img-product {
-    height: 341px;
+    height: 15.063em;
     object-fit: cover;
 }
 .card-title-product {
@@ -832,7 +834,7 @@ small{
 .prod-ammount {
     width: 50px;
     border-radius: 3px;
-    height: 34px;
+    /* height: 34px; */
 }
 .prod-ammount-label {
     padding-right: 5px;
@@ -843,6 +845,7 @@ small{
 .cart {
     margin-top: 100px;
 }
+/* HASTA ACÁ */
 
 /* PRODUCT CLASSES */
 .product
@@ -1114,18 +1117,32 @@ small{
 
 /* MEDIA QUERIES */
 
+/* MEDIA AGREGADOS */
+/* Product-Category*/
+@media (max-width:1200px){
+    .product-list{
+        grid-template-columns: repeat(2,250px);
+    }
+}
+
 /* Product Detail */
 @media (max-width: 991.98px)
 {
+    .product-list{
+        grid-column-gap: 1rem;
+        grid-template-columns: 250px 250px;
+        padding: 0% 25% 0% 25%;
+    }
     .product_image_large
     {
-    padding: 0% 25% 10% 25%;
+        padding: 0% 25% 10% 25%;
     }
     .product_content
     {
-    padding: 0% 25% 0% 25%;
+        padding: 0% 25% 0% 25%;
     }
 }
+/* FINAL */
 
 /*-------------------Media Hernan-----------------*/
 @media (max-width: 909.98px){
@@ -1150,7 +1167,6 @@ small{
     }
     .tituloLinea hr{
         height: 1.5px;
-      
     }
     /*-----------Categorias Productos---------------------------------------*/
     .categoriasProductos{
@@ -1201,7 +1217,7 @@ small{
     }
 
     .form-grou {
-    padding-left: 100px; 
+        padding-left: 100px; 
     }
     .card-contacto{
         height: 100px;
@@ -1245,6 +1261,44 @@ small{
         padding: 0px;
     }
 
+    /*MEDIAS AGREGADOS*/
+    .product{
+        padding-top: 50px;
+        padding-bottom: 58px;
+    }
+
+    .product-list {
+        justify-content: center;
+        /* margin-left: -130px; */
+        margin-top: 5.125em;
+    }
+
+    .sidenav {
+        background: #323232;
+        border: 1px;
+        border-radius: 0.5rem;
+        display: flex;
+        font-family: 'Lato', sans-serif;
+        height: auto;
+        margin-top: 0.5em;
+        left: 0;
+        width: 100%;
+    }
+    .sidenav a {
+        display: -ms-grid;
+        display: grid;
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+    }
+    .sidenav a:first-child{
+        padding: 0%;
+    }
+    .sidenav a img{
+        padding: 15%;
+        width: 10%;
+    }
+    /*FINAL*/
 }
 
 @media (max-width: 767.98px) {
@@ -1289,6 +1343,27 @@ small{
     }
 
 }
+
+/*MEDIA AGREGADO */
+@media (max-width: 740.98px){
+    .logocorpoFooter{
+        display: none;
+    }
+
+    .product-list {
+        grid-template-columns: repeat(1,550px);
+        justify-content: center;
+        /* margin-left: -130px; */
+        margin-top: 20.125em;
+        
+    }
+    .sidenav{
+        display: -ms-grid;
+        display: grid;
+        justify-content: center;
+    }
+}
+/*FINAL*/
 
 @media (max-width: 559.98px) {
     
